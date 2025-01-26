@@ -17,4 +17,41 @@ button:disabled {
 .remove-arrow {
     -moz-appearance: textfield;
 }
+
+/* Hide scrollbar but keep the functionality */
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .custom-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Design scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;  /* width of the entire scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* color of the scrollbar track */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;  /* color of the scrollbar handle */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* color of the scrollbar handle on hover */
+  }
+
+  .option-custom {
+    @apply text-black;
+  }
+  .bg{
+    @apply bg-white/20;
+  }
+  
+
+
   

@@ -29,17 +29,23 @@ import Axios from "./projects/Axios";
 import BMI from "./projects/BMI";
 import PasswordGenerator from "./projects/PasswordGenerator";
 import PasswordGenerator2 from "./projects/PasswordGenerator2";
+import Calculator from "./projects/Calculator";
+import FirebaseCrud from "./projects/FirebaseCrud";
+import TableWithRowScroll from "./projects/Table";
+import MadeWithAi from "./projects/MadeWithAi";
+
+import UserAuth from "./components/UserAuth";
 
 const App = () => {
-  const data = [
-    "mango",
-    "apple",
-    "banana",
-    "grapes",
-    "pinapple",
-    "watermelon",
-    "dates",
-  ];
+  // const data = [
+  //   "mango",
+  //   "apple",
+  //   "banana",
+  //   "grapes",
+  //   "pinapple",
+  //   "watermelon",
+  //   "dates",
+  // ];
   return (
     <div className="w-full min-h-lvh bg-gray-900 px-5">
       <div className="max-w-5xl mx-auto py-4 text-white">
@@ -75,8 +81,14 @@ const App = () => {
         {/* <UseForm/> */}
         {/* <Axios/> */}
         {/* <BMI/> */}
-        <PasswordGenerator2/>
-       
+        {/* <PasswordGenerator2/> */}
+        {/* <Calculator/> */}
+        {/* <FirebaseCrud/> */}
+        {/* <MadeWithAi/> */}
+        <UserAuth />
+        {/* <Register/> */}
+        {/* <Login/> */}
+        {/* <Outlet/> */}
       </div>
     </div>
   );
