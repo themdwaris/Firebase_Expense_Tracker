@@ -174,7 +174,7 @@ const UserAuth = () => {
             className="w-full max-w-xl mx-auto flex flex-col gap-4"
           >
             {!isLogin && (
-              <label htmlFor="">
+              <div >
                 <input
                   type="text"
                   value={formData.name}
@@ -184,10 +184,10 @@ const UserAuth = () => {
                   className="w-full p-3 pb-8 bg-transparent outline-none text-xl text-white border-b focus:border-green-500 focus:border-b-2"
                 />
                 <p className="text-red-400 mt-2">{errors.name}</p>
-              </label>
+              </div>
             )}
 
-            <label htmlFor="">
+            <div >
               <input
                 type="email"
                 value={formData.email}
@@ -197,9 +197,9 @@ const UserAuth = () => {
                 className="w-full p-3 pb-8 bg-transparent outline-none text-xl text-white border-b focus:border-green-500 focus:border-b-2"
               />
               <p className="text-red-400 mt-2">{errors.email}</p>
-            </label>
+            </div>
 
-            <label htmlFor="">
+            <div >
               <input
                 type="password"
                 value={formData.password}
@@ -209,7 +209,7 @@ const UserAuth = () => {
                 className="w-full p-3 pb-8 bg-transparent outline-none text-xl text-white border-b focus:border-green-600 focus:border-b-2"
               />
               <p className="text-red-400 mt-2">{errors.password}</p>
-            </label>
+            </div>
             {isLogin ? (
               <button
                 className="w-full p-3 rounded-full bg-green-600 transition-transform  text-white cursor-pointer text-xl mt-8 active:scale-90 hover:bg-green-700"
