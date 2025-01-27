@@ -32,7 +32,7 @@ const UserAuth = () => {
     const errorMessage = {};
     Object.entries(form).forEach(([key, value]) => {
       errorConfig[key].forEach((rule) => {
-        if (rule.required && value === "") {
+        if (rule.required && value.trim() === "") {
           errorMessage[key] = rule.msg;
         }
       });
