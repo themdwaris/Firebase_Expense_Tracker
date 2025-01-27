@@ -32,9 +32,9 @@ const FirebaseCrud = ({ user,isLoading, logout }) => {
   const createUser = async (e) => {
     e.preventDefault();
     if (
-      formData.title === "" ||
+      formData.title.trim() === "" ||
       formData.category === "" ||
-      formData.price === ""
+      formData.price.trim() === ""
     ) {
       alert("Please enter all fields");
       return;
